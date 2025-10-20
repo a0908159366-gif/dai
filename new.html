@@ -1,178 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RWD</title>
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    </head>
-    <body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kakao Friends 介紹頁</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-    <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-        <a class="navbar-brand" href="#">萊恩恩恩</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#">首頁</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">關於</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">服務</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">聯絡</a></li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-
-    <!-- 主視覺區塊 -->
-    <section class="bg-light text-center py-5">
-        <div class="container">
-        <h1 class="display-5 fw-bold">歡迎認識可愛的kacofriend!</h1>
-        <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            查看
-        </button>
-        </div>
-    </section>
-
-    <div class="modal" id="exampleModal" tabindex="-1">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title">～由來～</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <h3>Kakao Friends 是韓國通訊軟體 KakaoTalk 推出的可愛角色系列，如萊恩、阿皮奇、穆吉等，象徵不同個性與情感，廣受年輕人喜愛，並延伸至文具、服飾與咖啡店等周邊商品。
-</h3>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Kakao Friends</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">關於</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">角色</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">聯絡</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- 三欄內容區 -->
+  <!-- 主視覺 -->
+  <section class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">歡迎來認識可愛的 Kakao Friends！</h1>
+      <p class="lead">點擊下方按鈕了解他們的故事</p>
+      <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#AboutModal">
+        查看由來
+      </button>
+    </div>
+  </section>
+
+  <!-- 由來 Modal -->
+  <div class="modal fade" id="AboutModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Kakao Friends 的由來</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Kakao Friends 是韓國通訊軟體 KakaoTalk 推出的可愛角色系列，如萊恩、阿皮奇、穆吉等。  
+          每個角色象徵不同個性與情感，深受年輕人喜愛，並延伸至文具、服飾與咖啡店等周邊商品。
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 三欄角色介紹 -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- 第一欄：萊恩 -->
         <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="恩個人.jpeg" class="card-img-top" alt="Ryan">
             <div class="card-body">
-                <h5 class="card-title">主推角色1</h5>
-                萊恩<br>
-                <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#ModalRyan">
-                了解更多
-                </button>
+              <h5 class="card-title">萊恩 Ryan</h5>
+              <p class="card-text">沉穩可靠的獅子王子</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalRyan">了解更多</button>
             </div>
-        </div>
+          </div>
         </div>
 
-        <div class="modal" id="ModalRyan" tabindex="-1">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title">Ryan 萊恩</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6"><img src="恩個人.jpeg" width="200"></div>
-                        <div class="col-6">萊恩（Ryan）原本是非洲草原上的獅子王子，因不想繼承王位而離家出走。他沒有鬃毛，個性沉穩、內向卻很可靠，常擔任 Kakao Friends 中的領導者與傾聽者角色。
-</div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-    </div>
-    </div>
+        <!-- 第二欄：屁桃 -->
         <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="屁桃.jpeg" class="card-img-top" alt="Apeach">
             <div class="card-body">
-                <h5 class="card-title">主推角色2</h5>
-                屁桃<br>
-                <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#ModalApeach">
-                了解更多
-                </button>
+              <h5 class="card-title">屁桃 Apeach</h5>
+              <p class="card-text">淘氣又自信的基因突變桃子</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalApeach">了解更多</button>
             </div>
-        </div>
+          </div>
         </div>
 
-        <div class="modal" id="ModalApeach" tabindex="-1">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title">Apeach 屁桃</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6"><img src="屁桃.jpeg" width="200"></div>
-                        <div class="col-6">屁桃（Apeach）是從桃子樹上逃出來的基因變異桃子，因長出屁股形狀而得名。牠個性淘氣又自信，常愛惡作劇、表情豐富，是 Kakao Friends 中最活潑、最具魅力的角色之一。
-
-</div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
-    </div>
-    </div>
-
+        <!-- 第三欄：春植 -->
         <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm text-center">
+            <img src="恩.jpeg" class="card-img-top" alt="Choonsik">
             <div class="card-body">
-                <h5 class="card-title">主推角色3</h5>
-                春植<br>
-                <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#ModalChoonsik">
-                了解更多
-                </button>
+              <h5 class="card-title">春植 Choonsik</h5>
+              <p class="card-text">慵懶可愛的流浪貓</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalChoonsik">了解更多</button>
             </div>
-        </div>
+          </div>
         </div>
 
-        <div class="modal" id="ModalChoonsik" tabindex="-1">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title">Choonsik 春植</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6"><img src="恩.jpeg" width="200"></div>
-                        <div class="col-6">春植（Choonsik）是萊恩在城市生活時收養的貓咪，原本是一隻流浪貓。牠毛茸茸、表情呆萌，個性慵懶可愛，最喜歡吃東西和睡覺。春植和萊恩感情很好，常一起出現在 Kakao Friends 的插畫中。
-
-</div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- 各角色 Modal 區 -->
+
+  <!-- Modal 1：萊恩 -->
+  <div class="modal fade" id="ModalRyan" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">萊恩 Ryan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          萊恩原本是非洲草原上的獅子王子，因不想繼承王位而離家出走。  
+          他沒有鬃毛，個性沉穩、內向卻可靠，常擔任 Kakao Friends 的領導者與傾聽者角色。
+        </div>
+      </div>
     </div>
-    </section>
+  </div>
 
+  <!-- Modal 2：屁桃 -->
+  <div class="modal fade" id="ModalApeach" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">屁桃 Apeach</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          屁桃是從桃子樹上逃出來的基因變異桃子，因長出屁股形狀而得名。  
+          牠個性淘氣又自信，常惡作劇，是 Kakao Friends 中最活潑、最具魅力的角色之一。
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- 頁尾 -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2025 我的網站. All rights reserved.</p>
-    </footer>
+  <!-- Modal 3：春植 -->
+  <div class="modal fade" id="ModalChoonsik" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">春植 Choonsik</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          春植是萊恩在城市生活時收養的貓咪，原本是一隻流浪貓。  
+          牠毛茸茸、表情呆萌，最喜歡吃東西和睡覺，是 Kakao Friends 裡最可愛的角色之一。
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- 頁尾 -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p class="mb-0">© 2025 Kakao Friends Fan Page. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
